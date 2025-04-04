@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjay V - Web Developer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(-45deg, #FF3CAC, #784BA0, #2B86C5, #4CC9F0);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: white;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+            border-radius: 15px;
+            padding: 35px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            animation: slideIn 0.8s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateX(-50px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .title {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #f0f0f0;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 15px;
+            align-items: center;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 18px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-item:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
+        }
+        
+        section {
+            margin-bottom: 25px;
+            animation: fadeIn 0.8s ease-out;
+            animation-fill-mode: both;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        h2 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+            display: inline-block;
+        }
+        
+        .section-content {
+            padding-left: 15px;
+        }
+        
+        .education-item, .skills-group {
+            margin-bottom: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .education-item:hover, .skills-group:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+        }
+        
+        h3 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+        
+        .institution {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .date {
+            font-style: italic;
+            color: #e0e0e0;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill {
+            background: rgba(255, 255, 255, 0.25);
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        
+        .skill:hover {
+            background: rgba(255, 255, 255, 0.4);
+            transform: scale(1.08);
+        }
+        
+        .profile-text {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        /* Animation delays */
+        section:nth-child(2) { animation-delay: 0.2s; }
+        section:nth-child(3) { animation-delay: 0.4s; }
+        section:nth-child(4) { animation-delay: 0.6s; }
+        section:nth-child(5) { animation-delay: 0.8s; }
+        section:nth-child(6) { animation-delay: 1s; }
+        
+        @media (max-width: 768px) {
+            .resume-container {
+                padding: 25px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <header>
+            <h1>SANJAY V</h1>
+            <p class="title">Aspiring Web Developer</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📱</span>
+                    <span>9790652113</span>
+                </div>
+                <div class="contact-item">
+                    <span>📧</span>
+                    <span>sanjuvenu18@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <span>🏠</span>
+                    <span>49, Rajan Colony, SN Palayam, Coimbatore-641007</span>
+                </div>
+            </div>
+        </header>
+        
+        <section id="profile">
+            <h2>PROFILE</h2>
+            <div class="section-content">
+                <p class="profile-text">I am a passionate IT student specializing in web development technologies. With strong problem-solving skills and attention to detail, I'm eager to begin my professional journey in web development and contribute to innovative projects.</p>
+            </div>
+        </section>
+        
+        <section id="education">
+            <h2>EDUCATION</h2>
+            <div class="section-content">
+                <div class="education-item">
+                    <p class="institution">KG COLLEGE OF ARTS AND SCIENCE</p>
+                    <p>Bachelor of Science in Information Technology (BSc IT)</p>
+                    <p class="date">Currently Pursuing</p>
+                </div>
+                
+                <div class="education-item">
+                    <p class="institution">DEVANGA HR SEC SCHOOL</p>
+                    <p>Higher Secondary Education</p>
+                    <p class="date">Completed 2023</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="languages">
+            <h2>LANGUAGES</h2>
+            <div class="section-content">
+                <div class="skills-container">
+                    <div class="skill">Tamil</div>
+                    <div class="skill">Telugu</div>
+                    <div class="skill">English</div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="computer-skills">
+            <h2>COMPUTER SKILLS</h2>
+            <div class="section-content">
+                <div class="skills-container">
+                    <div class="skill">Spreadsheets</div>
+                    <div class="skill">Slide Presentations</div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="tech-skills">
+            <h2>TECHNICAL SKILLS</h2>
+            <div class="section-content">
+                <div class="skills-group">
+                    <h3>FRONTEND DEVELOPMENT</h3>
+                    <div class="skills-container">
+                        <div class="skill">HTML</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">JavaScript</div>
+                    </div>
+                </div>
+                
+                <div class="skills-group">
+                    <h3>PROGRAMMING LANGUAGES</h3>
+                    <div class="skills-container">
+                        <div class="skill">C</div>
+                        <div class="skill">C++</div>
+                        <div class="skill">Java</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
